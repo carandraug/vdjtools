@@ -241,10 +241,12 @@ in this format for VDJtools analysis.
 Metadata
 ^^^^^^^^
 
-Most VDJtools routines could be run with a sample batch. In this case
-paths to input files could be provided via command line (space separated), 
-but a more elegant solution is to specify a metadata file via ``-m`` option.
-The primary purpose of a metadata file is to organize and annotate datasets.
+Most VDJtools routines will accept multiple sample files as command
+line arguments for batch processing.  This should be preferred over
+multiple calls to VDJTools with a single sample due to the
+initialisation time of VDJTools.  One alternative is to specify a
+metadata file via ``-m`` option.  The primary purpose of a metadata
+file is to organize and annotate datasets.
 
 .. note::
    -  VDJtools will append metadata fields to its output tables to
